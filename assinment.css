@@ -1,0 +1,192 @@
+body{
+    background: #ecdfdf;
+}
+
+
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.main-sec{
+    width: 80%;
+    background-color: rgba(175, 187, 209, 0.096);
+}
+
+   
+
+.main-taitl{
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-left: 5px;
+    margin-top: 50px;
+
+}
+
+.heder-pic img{
+width: 100%;
+
+}
+.main-bar{
+    display: flex;
+}
+.titl{
+    text-align: center;
+    margin-top: 100px;
+}
+.batton a{
+    text-decoration: none;
+    background-color: darkblue;
+    margin-left: 5px;
+    padding: 6px;
+    border-radius: 30px;
+    color: #ffffff;
+    
+
+}
+.batton :hover{
+    background-color: rgb(41, 41, 28);
+    
+}
+.heder-pic:hover{
+
+    transform: scale(1.5);
+    transition: transform 2s ease-in;
+
+}
+/* ......................
+mid aria 
+........................*/
+.mid-banar img{
+  
+    
+}
+
+.one-mid{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 14px;
+    width: 98;
+height: 476px;
+}
+.mid-info p{
+   color:  #787885;
+}
+.mid-info i{
+    color: gold;
+    background-color: rgba(12, 11, 11, 0.034);
+}
+.all-mids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+ 
+}
+.moor a{
+    text-decoration: none;
+    float: right;
+    margin-top: 25px;
+    color: violet;
+    font-size: 17px;
+}
+/* 3rn-sction */
+.all-mnu{
+    display: flex;
+    align-items: center;
+    margin-top: 20PX;
+    
+
+}
+.menu-thamblan img{
+    height: 300px;
+    width: 80%;
+    border-radius: 30px;
+    margin-left: 40px;
+  
+}
+.one-mnu{
+    display: flex;
+  background-color: rgb(201, 221, 221);
+  
+}
+.txt-img{
+   
+    width: 100%;
+    background-color: rgb(30, 148, 56);
+    margin-top: 30PS;
+}
+.mnu-info{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+ .mnu-info a{
+background-color: rgb(133, 42, 14);
+text-decoration: none;
+margin: 5px;
+padding: 5px;
+font-size: 18px;
+margin-right: 4px;
+color: white;
+border-radius: 4px;
+
+ }
+ .larg-text{
+     font-size: 30px;
+ }
+/* futar.............................. */
+.futar p{
+    color: violet;
+}
+.futar{
+    background-color: rgb(51, 33, 33);
+    text-align: center;
+    color: white;
+ padding-top:20px ;
+ padding-bottom: 36px;
+}
+.all-i i{
+
+  margin: 5px;
+ 
+}
+
+/* responsive............................ */
+
+@media only screen and (max-width:688px) {
+    .main-bar{
+      background-color: tomato;
+      grid-template-columns: repeat(1, 1fr);
+      flex-direction: column;
+
+    }
+  .all-mids{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }  
+  .one-mnu{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+ 
+  }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .main-bar{
+      background-color: tomato;
+      grid-template-columns: repeat(1, 1fr);
+      flex-direction: column;
+    }
+    .all-mids{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+      }  
+      .one-mnu{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+     
+      }
+
+    }
